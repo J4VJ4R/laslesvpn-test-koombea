@@ -4,6 +4,7 @@
 .support{
   &__list{
     list-style: none;
+
   }
   &__link{
     display: flex;
@@ -23,6 +24,7 @@
 .support__list:first-child{
   padding: rem(23) 1rem;
 }
+//icons
 .fa-life-ring--white{
   color: white;
   font-size: rem(20);
@@ -39,4 +41,66 @@
   color: #fff;
   font-size: rem(20);
   padding-right: rem(15);
+}
+.fa-twitter:before {
+  content: "\f099";
+  color: white;
+  font-size: rem(20);
+}
+.fa-facebook:before {
+  content: "\f09a";
+  color: white;
+  font-size: rem(20);
+}
+.icon-signal:before {
+  content: "\e904";
+  color: #fff;
+  font-size: rem(20);
+}
+.icon-instagram:before {
+  content: "\e905";
+  color: #fff;
+  font-size: rem(20);
+}
+.company-support{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid $color-two;
+  &__list{
+    list-style: none;
+  }
+  &__link{
+    text-decoration: none;
+    color: white;
+    font-size: rem(12);
+    font-weight: 400;
+  }
+  &__item--title{
+    color: white;
+    font-weight: 700;
+    font-size: rem(14);
+    padding-bottom: 1rem;
+  }
+}
+.social-media{
+  display: flex;
+  &__item{
+    list-style: none;
+    padding-right: rem(38.96);
+  }
+  &__link{
+    text-decoration: none;
+  }
+}
+.copyright{
+  background-color: white;
+  text-align: center;
+  &__text{
+    color: $color-three;
+    font-size: rem(10);
+    font-weight: 400;
+    padding: rem(12) 0;
+    margin: 0;
+  }
 }

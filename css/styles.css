@@ -43,4 +43,60 @@ body {
   font-size: 1.25rem;
   padding-right: 0.9375rem; }
 
+.fa-twitter:before {
+  content: "\f099";
+  color: white;
+  font-size: 1.25rem; }
+
+.fa-facebook:before {
+  content: "\f09a";
+  color: white;
+  font-size: 1.25rem; }
+
+.icon-signal:before {
+  content: "\e904";
+  color: #fff;
+  font-size: 1.25rem; }
+
+.icon-instagram:before {
+  content: "\e905";
+  color: #fff;
+  font-size: 1.25rem; }
+
+.company-support {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #9A7DFF; }
+  .company-support__list {
+    list-style: none; }
+  .company-support__link {
+    text-decoration: none;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 400; }
+  .company-support__item--title {
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding-bottom: 1rem; }
+
+.social-media {
+  display: flex; }
+  .social-media__item {
+    list-style: none;
+    padding-right: 2.435rem; }
+  .social-media__link {
+    text-decoration: none; }
+
+.copyright {
+  background-color: white;
+  text-align: center; }
+  .copyright__text {
+    color: #272D4E;
+    font-size: 0.625rem;
+    font-weight: 400;
+    padding: 0.75rem 0;
+    margin: 0; }
+
 /*# sourceMappingURL=styles.css.map */
