@@ -1,0 +1,46 @@
+body {
+  font-family: Roboto, sans-serif; }
+
+.container-fluid {
+  max-width: 92.5rem;
+  width: 100%;
+  margin: 0 auto; }
+
+.footer {
+  background-color: #FF890D; }
+
+.support__list {
+  list-style: none; }
+.support__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 0.875rem; }
+.support__link-bold {
+  font-weight: 700; }
+.support__item {
+  padding: .5rem 0; }
+
+.support__list:first-child {
+  padding: 1.4375rem 1rem; }
+
+.fa-life-ring--white {
+  color: white;
+  font-size: 1.25rem;
+  padding-right: 0.9375rem; }
+
+.icon-Union:before {
+  content: "\e900";
+  color: #fff;
+  font-size: 1.25rem;
+  padding-right: 0.9375rem; }
+
+.icon-check:before {
+  content: "\e901";
+  color: #fff;
+  font-size: 1.25rem;
+  padding-right: 0.9375rem; }
+
+/*# sourceMappingURL=styles.css.map */

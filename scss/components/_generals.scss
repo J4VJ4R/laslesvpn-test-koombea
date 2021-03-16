@@ -1,0 +1,12 @@
+body{
+  font-family: Roboto, sans-serif;
+}
+//functions
+@function rem($value: 2rem) {
+  @return ($value / 16 * 1rem);
+}
+.container-fluid{
+  max-width: rem(1480);
+  width: 100%;
+  margin: 0 auto;
+}
