@@ -1,0 +1,42 @@
+.footer{
+  background-color: $color-one;
+}
+.support{
+  &__list{
+    list-style: none;
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: rem(14);
+  }
+  &__link-bold{
+    font-weight: 700;
+  }
+  &__item{
+    padding: .5rem 0;
+  }
+}
+.support__list:first-child{
+  padding: rem(23) 1rem;
+}
+.fa-life-ring--white{
+  color: white;
+  font-size: rem(20);
+  padding-right: rem(15);
+}
+.icon-Union:before {
+  content: "\e900";
+  color: #fff;
+  font-size: rem(20);
+  padding-right: rem(15);
+}
+.icon-check:before {
+  content: "\e901";
+  color: #fff;
+  font-size: rem(20);
+  padding-right: rem(15);
+}
