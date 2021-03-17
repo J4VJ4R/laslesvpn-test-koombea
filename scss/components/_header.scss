@@ -1,0 +1,219 @@
+.header {
+  background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+
+  &__container {
+    display: flex;
+    width: rem(1200);
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @include display(mobile) {
+      width: auto;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include display(mobile) {
+      display: flex;
+      border: 0;
+      position: relative;
+      background-color: transparent;
+      outline:none;
+      width: 30px;
+      height: 30px;
+      flex-basis: 42%;
+
+      &-span {
+        display: block;
+        background-color: $color-one;
+        width: 25px;
+        height: .2rem;
+        border-radius: 6px 0 0 6px;
+        position: absolute;
+        transform: rotate(0deg);
+        transition: all .25s ease;
+        transform-origin: left center;
+      }
+
+      &-span:nth-child(1) {
+        top: 5px;
+      }
+
+      &-span:nth-child(2) {
+        top: 13px;
+      }
+
+      &-span:nth-child(3) {
+        top: 20px;
+      }
+    }
+  }
+
+  &__navbar {
+
+    @include display(mobile) {
+      display: none;
+    }
+
+    &-list{
+      display: flex;
+      list-style: none;
+      margin-left: rem(140);
+
+      :hover {
+        color: $color-one;
+      }
+    }
+
+    &-item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      margin: 0px 22px;
+      text-decoration: none;
+      color: $color-font;
+
+      &:hover,
+      .active {
+      position: relative;
+      text-align: center;
+      font-weight: bold;
+
+        &:after {
+          background: $color-font;
+          border-radius: 100%;
+          bottom: -.5rem;
+          content: "";
+          height: 6px;
+          left: 0;
+          margin: 0 auto;
+          opacity: 1;
+          position: absolute;
+          right: 0;
+          width: 6px;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 34px 0 34px 0;
+
+    @include display (mobile) {
+      display: none;
+    }
+
+    .login {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      margin-left: 22px;
+      text-decoration: none;
+      color: $color-font;
+    }
+
+    .btn-started {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 47px;
+      margin-left: 22px;
+      background-color: $color-one;
+      border-radius: 5px;
+
+      &-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__logo{
+
+    &-text {
+
+      @include display (mobile) {
+        display: none;
+      }
+    }
+
+    &-symbol {
+      @include display (mobile) {
+        flex-basis: 44%;
+      }
+
+      @include display (small) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__active {
+    @include display(mobile) {
+      .header__navbar { 
+        display: flex;
+        margin: 50px auto;
+        order: 4;
+
+        &-list {
+          align-items: center;
+          flex-direction: column;
+          line-height: 70px;
+          margin: 0;
+        }
+      }
+
+      .header__menu {
+        border: 0;
+        background-color: transparent;
+
+        &-span:nth-child(1) {
+          transform: rotate(50deg);
+          left: 2px;
+          background-color: $color-one;
+        }
+
+        &-span:nth-child(2) {
+          opacity: 0;
+        }
+
+        &-span:nth-child(3) {
+          transform: rotate(-50deg);
+          top: 24px;
+          left: 2px;
+          background-color: $color-one;
+        }
+      }
+
+      .header__buttons {
+        display: flex;
+        flex-basis: 100%;
+        padding-top: 50px;
+        order: 5;
+      }
+    }
+  }
+
+  &__sticky {
+    position: sticky;
+    background: white;
+    top: 0;
+    z-index: 4;
+  }
+}
