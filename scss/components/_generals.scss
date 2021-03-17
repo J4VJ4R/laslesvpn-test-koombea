@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body{
   font-family: Roboto, sans-serif;
 }
@@ -9,4 +15,23 @@ body{
   max-width: rem(1480);
   width: 100%;
   margin: 0 auto;
+}
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 47px;
+  margin-left: 22px;
+  background-color: $color-one;
+  border-radius: 5px;
+
+  &-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    text-decoration: none;
+  }
 }
