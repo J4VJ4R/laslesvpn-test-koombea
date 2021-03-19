@@ -2,6 +2,8 @@
 $color-one: #FF890D;
 $color-two: #9A7DFF;
 $color-three: #272D4E;
+$color-four: #75818E;
+$color-five: #299EF3;
 
 @mixin display($size) {
   @if $size == small {
@@ -10,7 +12,8 @@ $color-three: #272D4E;
     @media (max-width: 1240px) { @content; }
   }@else if $size == tablet-small-down {
     @media (max-width: 768px) { @content; }
-  }@else if $size == tablet-medium-up {
+  }
+  @else if $size == tablet-medium-up {
     @media (min-width: 992px) { @content; }
   }
 }
