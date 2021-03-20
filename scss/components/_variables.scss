@@ -12,7 +12,8 @@ $color-five: #299EF3;
     @media (max-width: 1240px) { @content; }
   }@else if $size == tablet-small-down {
     @media (max-width: 768px) { @content; }
-  }@else if $size == tablet-medium-up {
+  }
+  @else if $size == tablet-medium-up {
     @media (min-width: 992px) { @content; }
   }
 }

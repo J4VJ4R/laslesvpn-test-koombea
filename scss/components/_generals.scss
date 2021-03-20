@@ -16,9 +16,9 @@ body{
 }
 .container-fluid{
   position: relative;
-  max-width: rem(1480);
   margin: auto;
 }
+
 .btn-primary {
   display: flex;
   align-items: center;
@@ -37,4 +37,12 @@ body{
     color: white;
     text-decoration: none;
   }
+}
+.container{
+  max-width: rem(1300);
+  width: 100%;
+  margin: 0 auto;
+}
+.bg-test-1{
+  background-color: khaki;
 }
