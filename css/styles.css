@@ -489,12 +489,17 @@ body {
   }
 }
 
+.hero {
+  position: relative;
+  width: 90rem;
+  margin: auto;
+}
 .hero__orange {
   position: absolute;
-  width: 81.25rem;
+  width: auto;
   top: -14.5625rem;
   right: -17.25rem;
-  margin-right: -8.625rem;
+  margin-right: 5.875rem;
   opacity: 0.3;
   z-index: 0;
 }

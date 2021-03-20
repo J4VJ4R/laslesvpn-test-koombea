@@ -1,12 +1,15 @@
 
 .hero {
+  position: relative;
+  width: rem(1440);
+  margin: auto;
 
   &__orange {
     position: absolute;
-    width: rem(1300);
+    width: auto;
     top: rem(-233);
     right: rem(-276);
-    margin-right: rem(-138);
+    margin-right: rem(94);
     opacity: .3;
     z-index: 0;
   }
