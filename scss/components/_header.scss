@@ -188,6 +188,10 @@
         flex-basis: 100%;
         padding-top: 50px;
         order: 5;
+
+        @include display (mobile) {
+          justify-content: center;
+        }
       }
     }
   }

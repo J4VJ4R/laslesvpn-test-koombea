@@ -4,6 +4,11 @@
   width: rem(1440);
   margin: auto;
 
+  @include display (mobile) {
+    width: auto;
+    margin: auto;
+  }
+
   &__orange {
     position: absolute;
     width: auto;
@@ -20,6 +25,7 @@
     max-width: rem(1300);
     padding-bottom: rem(200);
     margin: auto;
+
     @include display(mobile){
       padding-bottom: 0.5rem;
     }

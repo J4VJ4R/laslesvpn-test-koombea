@@ -217,6 +217,11 @@ body {
     order: 5;
   }
 }
+@media (max-width: 1240px) and (max-width: 1240px) {
+  .header__active .header__buttons {
+    justify-content: center;
+  }
+}
 .header__sticky {
   position: sticky;
   background: white;
@@ -493,6 +498,12 @@ body {
   position: relative;
   width: 90rem;
   margin: auto;
+}
+@media (max-width: 1240px) {
+  .hero {
+    width: auto;
+    margin: auto;
+  }
 }
 .hero__orange {
   position: absolute;
