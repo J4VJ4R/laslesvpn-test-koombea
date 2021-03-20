@@ -1,0 +1,222 @@
+.footer{
+  background-color: $color-one;
+  
+  &__container{
+    max-width: rem(1300);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    &-up{
+      border-bottom: 1px solid $color-two;
+    }
+  }
+}
+.support{
+  &__list{
+    list-style: none;
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: rem(14);
+    @include display(tablet-medium-up){
+      font-size: rem(20);
+    }
+  }
+  &__link-bold{
+    font-weight: 700;
+  }
+  &__item{
+    padding: .5rem 0;
+  }
+}
+.support__list:first-child{
+  padding: rem(23) 1rem;
+  @include display(tablet-medium-up){
+    display: flex;
+    justify-content: space-evenly;
+    padding: rem(47) 0rem;
+  }
+}
+//icons
+.fa-life-ring--white{
+  color: white;
+  font-size: rem(20);
+  padding-right: rem(15);
+  @include display(tablet-medium-up){
+    font-size: rem(30);
+  }
+}
+.icon-Union:before {
+  content: "\e900";
+  color: #fff;
+  font-size: rem(20);
+  padding-right: rem(15);
+  @include display(tablet-medium-up){
+    font-size: rem(30);
+  }
+}
+.icon-check:before {
+  content: "\e901";
+  color: #fff;
+  font-size: rem(20);
+  padding-right: rem(15);
+  @include display(tablet-medium-up){
+    font-size: rem(30);
+  }
+}
+.fa-twitter:before {
+  content: "\f099";
+  color: white;
+  font-size: rem(20);
+}
+.fa-facebook:before {
+  content: "\f09a";
+  color: white;
+  font-size: rem(20);
+}
+.icon-signal:before {
+  content: "\e904";
+  color: #fff;
+  font-size: rem(20);
+}
+.icon-instagram:before {
+  content: "\e905";
+  color: #fff;
+  font-size: rem(20);
+}
+.company-support{
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include display(tablet-medium-up){
+    padding-bottom: 7rem;
+  }
+  @include display(mobile){
+    padding-bottom: 7rem;
+  }
+  @include display(small){
+    padding-bottom: 7rem;
+  }
+  &__list{
+    list-style: none;
+    &--who-we-are-padding{
+      padding-right: rem(100);
+      padding-left: 9rem;
+    }
+    &--laslesvpn-padding{
+      padding-right: rem(100);
+    }
+    &--other-products-padding{
+      padding-right: rem(120);
+    }
+    &--support-padding{
+      padding-right: rem(80);
+    }
+    @include display(tablet-medium-up){
+      padding-top: 86px;
+    }
+    @include display(small){
+      padding: 2rem;
+    }
+    @include display(mobile){
+      padding: 2rem;
+    }
+  }
+  &__link{
+    text-decoration: none;
+    color: white;
+    font-size: rem(12);
+    font-weight: 400;
+  }
+  &__item--title{
+    color: white;
+    font-weight: 700;
+    font-size: rem(14);
+    padding-bottom: 1rem;
+  }
+  &__social-icon{
+   
+    &-link{
+      text-decoration: none;
+      padding-right: 5.435rem;
+      @include display(tablet-small-down){
+        padding-right: .5rem;
+      }
+    }
+    @include display(tablet-medium-up){
+      margin-left: -4rem;
+      padding-top: 8.5rem;
+    }
+    @include display(tablet-small-down){
+      align-items: center;
+    }
+    @include display(mobile){
+      padding-top: 4.5rem;
+    }
+  }
+}
+.social-media{
+  display: flex;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  
+  &__item{
+    list-style: none;
+    padding-right: rem(38.96);
+  }
+}
+.copyright{
+  background-color: white;
+  text-align: center;
+  &__text{
+    color: $color-three;
+    font-size: rem(10);
+    font-weight: 400;
+    padding: rem(12) 0;
+    margin: 0;
+    @include display(tablet-medium-up){
+      padding: rem(37) 0;
+    }
+  }
+}
+.footer-arrow {
+  right: 0;
+  top: 5.625rem;
+  position: absolute;
+
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  @include display(tablet-small-down){
+    display: none;
+  }
+}
+.icon-icon-on-top{
+  font-size: 30px;
+}
+.social-media-footer{
+  display: flex;
+}
+.company-support__list--hidden{
+  @include display(tablet-small-down){
+    display: none;
+  }
+}
+.company-support__list--support-padding{
+  width: 19%;
+}
+.company-support__social-icon-link--padding{
+  padding-right: rem(10);
+}
+.company-support__list--width{
+  @include display(tablet-medium-up){
+    width: 19%;
+  }
+}

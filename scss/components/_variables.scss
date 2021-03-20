@@ -1,0 +1,16 @@
+//colors
+$color-one: #FF890D;
+$color-two: #9A7DFF;
+$color-three: #272D4E;
+
+@mixin display($size) {
+  @if $size == small {
+    @media (max-width: 576px) { @content; }
+  }@else if $size == mobile {
+    @media (max-width: 1240px) { @content; }
+  }@else if $size == tablet-small-down {
+    @media (max-width: 768px) { @content; }
+  }@else if $size == tablet-medium-up {
+    @media (min-width: 992px) { @content; }
+  }
+}
