@@ -1,5 +1,7 @@
 .footer{
+  position: relative;
   background-color: $color-one;
+  z-index: 30;
   
   &__container{
     max-width: rem(1300);

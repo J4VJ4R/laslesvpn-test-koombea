@@ -12,11 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-.container-fluid {
-  position: relative;
-  margin: auto;
-}
-
 .btn-primary {
   display: flex;
   align-items: center;
@@ -230,7 +225,9 @@ body {
 }
 
 .footer {
+  position: relative;
   background-color: #FF890D;
+  z-index: 30;
 }
 .footer__container {
   max-width: 81.25rem;
@@ -498,6 +495,7 @@ body {
   position: relative;
   width: 90rem;
   margin: auto;
+  z-index: 30;
 }
 @media (max-width: 1240px) {
   .hero {
@@ -672,7 +670,9 @@ body {
 }
 
 .made-simple {
+  position: relative;
   background-color: white;
+  z-index: 30;
 }
 .made-simple__title {
   text-align: center;
@@ -809,6 +809,193 @@ body {
   }
   .btn-primary--made-simple a {
     font-size: 13px;
+  }
+}
+
+.curvebanner {
+  background-color: #FF890D;
+  width: 100%;
+  height: 1140px;
+  border: none;
+  position: relative;
+}
+.curvebanner:before {
+  content: "";
+  width: 130%;
+  height: 0;
+  padding-top: 20%;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  bottom: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 576px) {
+  .curvebanner:before {
+    display: none;
+  }
+}
+.curvebanner:after {
+  content: "";
+  width: 130%;
+  height: 0;
+  padding-top: 20%;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 576px) {
+  .curvebanner:after {
+    display: none;
+  }
+}
+.curvebanner__content {
+  position: relative;
+  max-width: 92.5rem;
+  margin: auto;
+}
+.curvebanner__content .ellipse {
+  position: absolute;
+  width: auto;
+  top: 9.375rem;
+  left: 0px;
+  margin-left: -24px;
+}
+.curvebanner__content .ellipse--right {
+  top: 32.8125rem;
+  left: 59.625rem;
+  margin-left: 0;
+  z-index: 30;
+}
+.curvebanner__content .ellipse--bigl {
+  top: 12.375rem;
+  left: 0px;
+  margin-left: -3px;
+}
+.curvebanner__content .ellipse--bigr {
+  top: 33.75rem;
+  left: 71.875rem;
+  margin-left: 0;
+}
+.curvebanner__content .laptop-w {
+  position: absolute;
+  left: 6.5625rem;
+  box-shadow: -25px 0px 44px rgba(81, 49, 194, 0.35);
+  z-index: 10;
+}
+@media (max-width: 1240px) {
+  .curvebanner__content .laptop-w {
+    display: none;
+  }
+}
+.curvebanner__content .dots {
+  position: absolute;
+  width: auto;
+  top: 25.125rem;
+  left: 10px;
+}
+.curvebanner__content .dots--right {
+  top: 47.1875rem;
+  left: 61.875rem;
+}
+@media (max-width: 1240px) {
+  .curvebanner__content .dots--right {
+    left: 55.625rem;
+  }
+}
+.curvebanner__content-text {
+  position: absolute;
+  width: 41%;
+  top: 40.625rem;
+  left: 18.1875rem;
+}
+.curvebanner__content-text h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: white;
+  padding-bottom: 39px;
+}
+@media (max-width: 768px) {
+  .curvebanner__content-text h3 {
+    padding-bottom: 19px;
+  }
+}
+.curvebanner__content-text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+  padding-right: 62px;
+}
+@media (max-width: 1240px) {
+  .curvebanner__content-text p {
+    padding-right: 0;
+  }
+}
+.curvebanner__content-text .btn-primary--curvebanner {
+  width: 16.6875rem;
+  height: 4.5rem;
+  border-radius: 60px;
+  margin: 40px 0;
+  background-color: #70C217;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .curvebanner__content-text .btn-primary--curvebanner {
+    margin: 20px 0;
+  }
+}
+.curvebanner__content-text--top {
+  top: 9.0625rem;
+  left: 38.75rem;
+  padding-right: 52px;
+}
+@media (max-width: 768px) {
+  .curvebanner__content-text--top {
+    top: 6.25rem;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 1240px) {
+  .curvebanner__content-text {
+    left: 24.4375rem;
+  }
+}
+@media (max-width: 768px) {
+  .curvebanner__content-text {
+    width: 80%;
+    left: 5.6875rem;
+  }
+}
+@media (max-width: 768px) {
+  .curvebanner__content-text--bottom {
+    top: 37.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .curvebanner__content-text--bottom {
+    top: 43.75rem;
+  }
+}
+.curvebanner__content .board-m {
+  position: absolute;
+  top: 35.625rem;
+  border-radius: 30px;
+  right: 10rem;
+  box-shadow: 24px 70px 64px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+@media (max-width: 1240px) {
+  .curvebanner__content .board-m {
+    display: none;
   }
 }
 
