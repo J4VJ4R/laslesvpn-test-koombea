@@ -1,0 +1,173 @@
+
+.hero {
+  position: relative;
+  width: rem(1440);
+  margin: auto;
+
+  @include display (mobile) {
+    width: auto;
+    margin: auto;
+  }
+
+  &__orange {
+    position: absolute;
+    width: auto;
+    top: rem(-233);
+    right: rem(-276);
+    margin-right: rem(94);
+    opacity: .3;
+    z-index: 0;
+  }
+
+  &__content {
+    display: flex;
+    position: relative;
+    max-width: rem(1300);
+    padding-bottom: rem(200);
+    margin: auto;
+
+    @include display(mobile){
+      padding-bottom: 0.5rem;
+    }
+
+    &-text {
+      width: 66.6%;
+      font-style: normal;
+      padding-top: rem(149);
+      @include display(mobile){
+        width: 100%;
+        padding-top: 2rem;
+      }
+      .title {
+        color: $color-three;
+        font-weight: 500;
+        font-size: 85px;
+        margin: 0;
+        line-height: 95px;
+        padding-bottom: rem(30);
+        @include display(mobile){
+          font-size: 36px;
+          line-height: 46px;
+          text-align: center;
+        }
+
+        &-description {
+          color: $color-four;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          padding-right: rem(223);
+          @include display(mobile){
+            padding-right: 0;
+            padding: .5rem 1rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      @include display(mobile){
+        justify-content: center;
+      }
+      .btn-primary--herocustom {
+        width: rem(267);
+        height: rem(72);
+        border-radius: 60px;
+        margin: 40px 0;
+        @include display(mobile){
+          width: 8.6875rem;
+          height: 2.3rem;
+          border-radius: 60px;
+          margin: 40px 0;
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+
+    }
+
+    &-images {
+      position: relative;
+      width: 33.3%;
+      @include display(mobile){
+        display: none;
+      }
+      .girls {
+        position: absolute;
+        width: auto;
+        top: rem(135);
+        right: -70px;
+        margin-right: rem(207);
+        border-radius: 10px;
+        z-index: 10;
+      }
+
+      .vpn {
+        position: absolute;
+        width: auto;
+        top: rem(186);
+        right: -70.3px;
+        margin-right: -3px;
+        z-index: 10;
+      }
+
+      .sneakers {
+        position: absolute;
+        width: auto;
+        top: rem(68);
+        right: rem(-70);
+        margin-right: rem(-493);
+        z-index: 0;
+      }
+
+      .pay {
+        position: absolute;
+        width: auto;
+        top: rem(405);
+        right: rem(-120);
+        margin-right: -43px;
+        z-index: 10;
+      }
+
+      .cart {
+        position: absolute;
+        width: auto;
+        top: rem(575);
+        right: rem(360);
+        margin-right: -43px;
+        z-index: 10;
+      }
+    }
+  }
+}
+.btn-primary--customtext {
+  width: rem(230);
+  height: rem(72);
+  background-color: transparent;
+  border-radius: 0px;
+  margin: 40px 0;
+
+  span {
+    padding-right: 10px;
+    color: $color-four;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  a {
+    color: $color-five;
+  }
+  @include display(mobile){
+    width: 11.6875rem;
+    height: 2.3rem;
+    border-radius: 60px;
+    margin: 40px 0;
+    a{
+      font-size: 13px;
+    }
+  }
+}
