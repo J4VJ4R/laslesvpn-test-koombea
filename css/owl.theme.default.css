@@ -21,6 +21,7 @@
     background: white;
     display: inline-block;
     cursor: pointer;
+    outline: none;
     border-radius: 100%; }
     .owl-theme .owl-nav [class*='owl-']:hover {
       background: #FF890D;
