@@ -999,4 +999,132 @@ body {
   }
 }
 
+.sponsors {
+  position: relative;
+  padding-top: 10px;
+}
+.sponsors__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 83.3%;
+  margin: auto;
+}
+@media (max-width: 1240px) {
+  .sponsors__logos {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+.sponsors__logos img:hover {
+  filter: brightness(50%);
+}
+
+.customers {
+  position: relative;
+  background-color: white;
+  margin-top: -32px;
+}
+@media (max-width: 1240px) {
+  .customers {
+    margin-top: 40px;
+  }
+}
+.customers__header {
+  width: 51%;
+  margin: auto;
+}
+.customers__header-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  text-align: center;
+}
+@media (max-width: 1240px) {
+  .customers__header-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+}
+.customers__header-subtitle {
+  width: 90%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 20px;
+  color: #94A2B3;
+}
+.customers__testimonial {
+  border-radius: 10px;
+  border: 2px solid #dddddd;
+  height: 250px;
+  min-width: 400px;
+  margin: 64px 10px;
+  padding: 2rem;
+}
+@media (max-width: 1240px) {
+  .customers__testimonial {
+    padding: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .customers__testimonial {
+    margin: 64px -10px;
+  }
+}
+.customers__testimonial:hover,
+.customers__testimonial .active {
+  border-color: #FF890D;
+}
+.customers__testimonial-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.customers__photo {
+  margin-right: 20px;
+}
+.customers__ppl {
+  display: flex;
+  flex-direction: column;
+}
+.customers__ppl-name {
+  font-style: normal;
+  font-size: 18px;
+}
+.customers__ppl-location {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #75818E;
+}
+.customers__rating {
+  color: #0b132a;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .customers__rating {
+    margin-left: 20px;
+  }
+}
+.customers__rating:after {
+  content: url(../../img/star.svg);
+  margin-left: 11px;
+}
+.customers__body {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .customers__body {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
