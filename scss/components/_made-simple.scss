@@ -1,8 +1,5 @@
 .made-simple{
-  position: relative;
   background-color: white;
-  z-index: 30;
-  
   &__title{
     text-align: center;
     width: 31.3%;
@@ -13,24 +10,78 @@
     line-height: 70px;
     color: $color-three;
     padding-top: rem(35);
+    @include display(mobile){
+      width: 100%;
+    }
+    @include display(small){
+      font-size: rem(26);
+    }
   }
 }
 .made-simple__cards{
   display: flex;
+  @include display(small){
+    display: block;
+  }
+  @include display(mobile){
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .card{
   width: 33.3%;
   padding-top: rem(97);
   padding-bottom: rem(146.61);
   padding-right: 20px;
+  @include display(mobile){
+    padding-left: .5rem;
+    width: 50%;
+    padding-right: 0;
+  }
+  
+  @include display(small){
+    padding: 1rem;
+    width: 100%;
+    padding-top: 2.0625rem;
+    padding-bottom: 2.163125rem;
+    padding-right: 1rem;
+  }
+  
   &:last-child{
     padding-right: 0;
+    @include display(small){
+      padding-right: 1rem;
+    }
   }
   &:nth-child(2){
     padding-top: rem(171);
+    
+    @include display(mobile){
+      padding-top: 6.0625rem;
+      padding-right: .5rem;
+    }
+    @include display(small){
+      padding-top: 0;
+    }
   }
   &:nth-child(3){
     padding-top: rem(247);
+
+    @include display(mobile){
+      display: none;
+    }
+    
+    @include display(tablet-small-down){
+      padding-bottom: 2.163125rem;
+      display: block;
+    }
+    @include display(tablet-small-down){
+      padding-top: 0;
+    }
+    @include display(small){
+      padding-top: 5.4375rem;
+    }
   }
   &__title{
     padding-top: rem(66.6);
@@ -38,6 +89,9 @@
     font-weight: bold;
     font-size: 36px;
     color: $color-three;
+    @include display(tablet-small-down){
+      font-size: 26px;
+    }
   }
   &__text{
     padding-top: rem(35.12);
@@ -60,36 +114,75 @@
     top: rem(58.4);
     bottom: 0;
     left: rem(-70);
+    @include display(mobile){
+      display: none;
+    }
   }
   &__img2{
     position: absolute;
     top: 16px;
     left: rem(-48);
+    @include display(tablet-small-down){
+      display: none;
+    }
+    @include display(small){
+      display: none;
+    }
   }
   &__img-square{
     position: absolute;
     top: rem(-42);
     left: rem(48);
+    @include display(tablet-small-down){
+      display: none;
+    }
+    @include display(small){
+      display: block;
+    }
   }
   &__img-facebook{
     position: absolute;
     top: rem(112);
     left: rem(48);
+    @include display(tablet-small-down){
+      display: none;
+    }
+    @include display(small){
+      display: block;
+    }
   }
   &__img-mailchimp{
     position: absolute;
     top: rem(19);
     left: rem(289);
+    @include display(tablet-small-down){
+      display: none;
+    }
+    @include display(small){
+      display: block;
+    }
   }
   &__img-jetpack{
     position: absolute;
     top: rem(134);
     left: rem(229);
+    @include display(tablet-small-down){
+      display: none;
+    }
+    @include display(small){
+      display: block;
+    }
   }
   &__img-google-ads{
     position: absolute;
     top: rem(249);
     left: rem(153);
+    @include display(tablet-small-down){
+      display: none;
+    }
+    @include display(small){
+      display: block;
+    }
   }
   &__img-funny{
     position: absolute;

@@ -99,11 +99,9 @@
     padding-bottom: 7rem;
   }
   @include display(mobile){
-    padding-bottom: 7rem;
+    padding-bottom: .5rem;
   }
-  @include display(small){
-    padding-bottom: 7rem;
-  }
+  
   &__list{
     list-style: none;
     &--who-we-are-padding{
@@ -211,9 +209,7 @@
     display: none;
   }
 }
-.company-support__list--support-padding{
-  width: 19%;
-}
+
 .company-support__social-icon-link--padding{
   padding-right: rem(10);
 }
