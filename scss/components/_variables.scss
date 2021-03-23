@@ -6,6 +6,7 @@ $color-four: #75818E;
 $color-five: #299EF3;
 $color-six: #70C217;
 $color-seven: #94A2B3;
+$color-eight: #C16300;
 
 @mixin display($size) {
   @if $size == small {

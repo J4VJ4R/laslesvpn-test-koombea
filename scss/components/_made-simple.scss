@@ -19,6 +19,8 @@
   }
 }
 .made-simple__cards{
+  position: relative;
+  z-index: 900;
   display: flex;
   @include display(small){
     display: block;
