@@ -14,10 +14,6 @@ body{
 @function rem($value: 2rem) {
   @return ($value / 16 * 1rem);
 }
-.container-fluid{
-  position: relative;
-  margin: auto;
-}
 
 .btn-primary {
   display: flex;

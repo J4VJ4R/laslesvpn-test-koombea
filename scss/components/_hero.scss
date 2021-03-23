@@ -1,8 +1,13 @@
-
 .hero {
   position: relative;
   width: rem(1440);
   margin: auto;
+  z-index: 30;
+
+  @include display (mobile) {
+    width: auto;
+    margin: auto;
+  }
 
   @include display (mobile) {
     width: auto;

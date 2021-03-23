@@ -1,0 +1,192 @@
+.curvebanner {
+  background-color: $color-one;
+  width: 100%;
+  height: 1140px;
+  border: none;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 130%;
+    height: 0;
+    padding-top: 20%;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    bottom: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include display (small) {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 130%;
+    height: 0;
+    padding-top: 20%;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include display (small) {
+      display: none;
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: rem(1480);
+    margin: auto;
+
+    .ellipse {
+      position: absolute;
+      width: auto;
+      top: rem(150);
+      left: 0px;
+      margin-left: -24px;
+
+      &--right {
+        top: rem(525);
+        left: rem(954);
+        margin-left: 0;
+        z-index: 30;
+        
+      }
+
+      &--bigl {
+        top: rem(198);
+        left: 0px;
+        margin-left: -3px;
+      }
+
+      &--bigr {
+        top: rem(540);
+        left: rem(1150);
+        margin-left: 0;
+      }
+    }
+
+    .laptop-w {
+      position: absolute;
+      left: rem(105);
+      box-shadow: -25px 0px 44px rgba(81, 49, 194, 0.35);
+      z-index: 10;
+
+      @include display (mobile) {
+        display: none;
+      }
+    }
+
+    .dots {
+      position: absolute;
+      width: auto;
+      top: rem(402);
+      left: 10px;
+
+      &--right {
+        top: rem(755);
+        left: rem(990);
+
+        @include display (mobile) {
+          left: rem(890);
+        }
+      }
+    }
+
+    &-text {
+      position: absolute;
+      width: 41%;
+      top: rem(650);
+      left: rem(291);
+
+      h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: white;
+        padding-bottom: 39px;
+
+        @include display (tablet-small-down) {
+          padding-bottom: 19px;
+        }
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: white;
+        padding-right: 62px;
+
+        @include display (mobile) {
+          padding-right: 0;
+        }
+      }
+
+      .btn-primary--curvebanner {
+        width: rem(267);
+        height: rem(72);
+        border-radius: 60px;
+        margin: 40px 0;
+        background-color: $color-six;
+        color: white;
+        text-decoration: none;
+
+        @include display (tablet-small-down) {
+          margin: 20px 0;
+        }
+      }
+
+      &--top {
+        top: rem(145);
+        left: rem(620);
+        padding-right: 52px;
+
+        @include display (tablet-small-down) {
+          top: rem(100);
+          padding-bottom: 10px;
+        }
+      }
+
+      @include display (mobile) {
+        left: rem(391);
+      }
+
+      @include display (tablet-small-down) {
+        width: 80%;
+        left: rem(91);
+      }
+
+      &--bottom {
+        @include display (tablet-small-down) {
+          top: rem(600);
+        }
+
+        @include display (small) {
+          top: rem(700);
+        }
+      }
+    }
+
+    .board-m {
+      position: absolute;
+      top: rem(570);
+      border-radius: 30px;
+      right: rem(160);
+      box-shadow: 24px 70px 64px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+
+      @include display (mobile) {
+        display: none;
+      }
+    }
+  }
+}
