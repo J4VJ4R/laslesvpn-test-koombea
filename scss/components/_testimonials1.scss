@@ -1,0 +1,203 @@
+.testimonials1{
+  
+  background-color: white;
+  &__bg{
+    background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+    position: relative;
+    z-index: 30;
+    padding-bottom: 17.9375rem;
+    @include display(mobile){
+      padding-bottom: 4rem;
+    }
+  }
+  &__title{
+    text-align: center;
+    padding-top: rem(192);
+    font-size: rem(55);
+    width: 50%;
+    margin: 0 auto;
+    @include display(mobile){
+      width: 100%;
+      font-size: 2rem;
+      padding-top: 2rem;
+    }
+  }
+}
+.slides{
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  width: 66.6%;
+  margin: 0 auto;
+  margin-bottom: rem(234.83);
+  box-shadow: 0px 25px 24px 0px rgba(236,240,253,0.80);
+  @include display(mobile){
+    margin-bottom: 0;
+  }
+  &__item{
+    list-style: none;
+    margin-top: 190px;
+    margin-bottom: rem(287);
+    @include display(mobile){
+      margin-bottom: 0;
+      margin-top: 2rem;
+    }
+    @include display(small){
+      margin-top: 1rem;
+    }
+    
+  }
+  &__text{
+    padding: 7.9rem rem(110) ;
+    color: $color-four;
+    line-height: rem(39);
+    text-align: center;
+    position: relative;
+    z-index: 200;
+    font-size: rem(26);
+    @include display(small){
+      font-size: 12px;
+      padding: 1rem;
+    }
+    @include display(mobile){
+      font-size: 14px;
+      padding: 1rem;
+    }
+  }
+  &__dots{
+    position: absolute;
+    top: 12rem;
+    left: rem(-18);
+    transform: rotate(-90deg);
+    z-index: -1;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__dots-red{
+    position: absolute;
+    top: 31px;
+    left: rem(518);
+    z-index: -1;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__afro-girl{
+    position: absolute;
+    top: rem(-236);
+    right: rem(-229);
+    box-shadow: 0px 14px 24px 0px rgba(0,0,0,0.30);
+    border-radius: 100%;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__afro-man{
+    position: absolute;
+    top: rem(106);
+    right: rem(-325);
+    box-shadow: 0px 14px 24px 0px rgba(0,0,0,0.30);
+    border-radius: 100%;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__indian-man{
+    position: absolute;
+    bottom: rem(-235);
+    right: rem(-108);
+    box-shadow: 0px 14px 24px 0px rgba(0,0,0,0.30);
+    border-radius: 100%;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__american-man{
+    position: absolute;
+    bottom: rem(-133);
+    left: rem(-264);
+    box-shadow: 0px 14px 24px 0px rgba(0,0,0,0.75);
+    border-radius: 100%;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__asian-girl{
+    position: absolute;
+    top: rem(58);
+    left: rem(-270);
+    box-shadow: 0px 14px 24px 0px rgba(0,0,0,0.30);
+    border-radius: 100%;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__latin-girl{
+    position: absolute;
+    top: rem(-175);
+    left: rem(-55.96);
+    box-shadow: 0px 14px 24px 0px rgba(0,0,0,0.30);
+    border-radius: 100%;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__quotes{
+    position: absolute;
+    top: rem(28.77);
+    left: rem(309);
+    z-index: 100;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__rectangle2{
+    left: 2.5%;
+    top: 59px;
+    width: 95%;
+    position: absolute;
+    z-index: -1;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__rectangle3{
+    left: 5%;
+    top: 101px;
+    width: 90%;
+    position: absolute;
+    z-index: -1;
+    @include display(mobile){
+      display: none;
+    }
+  }
+}
+.icon-arrow--prev{
+  position: absolute;
+  bottom: -6.57875rem;
+  right: 5rem;
+  padding-right: 28.27px;
+  cursor: pointer;
+  @include display(mobile){
+    padding-right: 0;
+    left: 35%;
+    bottom: -2rem;
+  }
+}
+.icon-arrow--next{
+  position: absolute;
+  bottom: -6.57875rem;
+  right: 3rem;
+  transform: rotate(180deg);
+  cursor: pointer;
+  @include display(mobile){
+    padding-right: 0;
+    right: 35%;
+    bottom: -2rem;
+  }
+}
+.icon-arrow:before {
+  color: $color-four;
+  content: "\e908";
+}
