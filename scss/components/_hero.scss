@@ -9,6 +9,11 @@
     margin: auto;
   }
 
+  @include display (mobile) {
+    width: auto;
+    margin: auto;
+  }
+
   &__orange {
     position: absolute;
     width: auto;
