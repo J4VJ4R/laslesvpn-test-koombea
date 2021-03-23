@@ -1,0 +1,126 @@
+.supported{
+  background-color: white;
+  margin-top: -0.5rem;
+  position: relative;
+  margin-bottom: rem(103);
+  &__figures{
+    position: relative;
+  }
+  &__title{
+    padding-top: rem(130);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 70px;
+    color: $color-three;
+    text-align: center;
+  }
+  &__text{
+    color: $color-four;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: rem(146);
+    @include display(mobile){
+      padding-bottom: 0;
+      padding-top: 5rem;
+    }
+  }
+  &__bg-gray{
+    width: 100%;
+    margin: 0 auto;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__highlight{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+  }
+  &__text1{
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    padding-top: rem(67);
+    padding-bottom: rem(88);
+    text-align: center;
+    width: 66.6%;
+    margin: 0 auto;
+  }
+  &__bg-brown{
+    width: 100%;
+    background-color: $color-eight;
+    position: absolute;
+    bottom: -103px;
+    @include display(mobile){
+      position: relative;
+    }
+  }
+  &__team1{
+    position: absolute;
+    left: rem(88.56);
+    margin: 0 auto;
+    bottom: 156px;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__dots-green{
+    position: absolute;
+    left: -5.4375rem;
+    bottom: 356px;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__dots-red2{
+    position: absolute;
+    right: -6.5rem;
+    bottom: 127px;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__ellipse4{
+    bottom: 23rem;
+    position: absolute;
+    left: -4.5rem;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__ellipse5{
+    position: absolute;
+    bottom: 38rem;
+    left: 8.4375rem;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__ellipse6{
+    position: absolute;
+    bottom: 43rem;
+    right: -46px;
+    @include display(mobile){
+      display: none;
+    }
+  }
+  &__ellipse7{
+    z-index: 900;
+    position: absolute;
+    bottom: -8rem;
+    right: -66px;
+    @include display(mobile){
+      display: none;
+    }
+  }
+}
