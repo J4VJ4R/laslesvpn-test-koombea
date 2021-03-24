@@ -1,2 +1,13 @@
-# laslesvpn-test-koombea
-Development of a landing page for testing in the Koombea company where it is intended to be completed in 5 days.  The page must be built with valid HTML / CSS / Javascript. The CSS code should be as reusable and scalable as possible. >> Use SCSS whenever possible. Don't use Bootstrap or some other CSS framework  The page must be adapted to the screen size and resolution of the device.
+# ![](./img/laslesVPN.svg) LaslesVPN landing page
+
+## Overview
+This project consists of creating a landing page in HTML, CSS and Javascript based on the [Figma Design](https://www.figma.com/file/FBKj7FLMIVLBuBoAj8alwP/LaslesVPN-Test)
+
+#### Follow me 💬
+
+| Authors | GitHub | Twitter | Linkedin |
+| :---: | :---: | :---: | :---: |
+| Oscar Andres Montes | [Andmontc](https://github.com/andmontc) | [@damstyx](https://twitter.com/damstyx) | [andmontc](https://www.linkedin.com/in/andmontc) |
+
+##### March, 2021. Colombia
+

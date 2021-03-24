@@ -1,6 +1,7 @@
 const $menu = document.querySelector('.js-header-menu');
 const $head = document.querySelector('.js-header');
 const $foot = document.querySelector('.js-footer-ontop-click');
+const $hide = document.querySelector('.js-made-simple');
 const sticky = $head.offsetTop;
 let footerOntopClick = $('.js-footer-ontop-click')
 
@@ -31,6 +32,7 @@ $(document).ready(function(){
   $menu.addEventListener('click', () => {
     const header = $head.querySelector('.header__container');
     header.classList.toggle('header__active');
+    $hide.classList.toggle('hidden');
   })
 
   function handleStickyScroll () {
